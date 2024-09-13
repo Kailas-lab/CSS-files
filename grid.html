@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 2fr; /* Defines two columns: first takes 1 part, second takes 2 parts */
+      grid-gap: 10px; /* Adds space between grid items */
+      background-color: lightgray;
+    }
+    
+    .grid-item {
+      background-color: teal;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+  <title>Grid Example</title>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="grid-item">Item 1</div>
+    <div class="grid-item">Item 2</div>
+    <div class="grid-item">Item 3</div>
+    <div class="grid-item">Item 4</div>
+  </div>
+</body>
+</html>

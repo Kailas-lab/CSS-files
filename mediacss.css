@@ -1,0 +1,71 @@
+/* Default styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: lightgrey;
+    color: black;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Styles for devices with a max-width of 600px */
+@media (max-width: 600px) {
+    body {
+        background-color: lightblue;
+        font-size: 14px;
+    }
+
+    header, footer {
+        background-color: #444;
+        padding: 15px;
+    }
+
+    main {
+        padding: 15px;
+    }
+}
+
+/* Styles for devices with a min-width of 601px and a max-width of 1024px */
+@media (min-width: 601px) and (max-width: 1024px) {
+    body {
+        background-color: lightgreen;
+        font-size: 16px;
+    }
+
+    header, footer {
+        background-color: #555;
+        padding: 20px;
+    }
+
+    main {
+        padding: 25px;
+    }
+}
+
+/* Styles for devices with a min-width of 1025px */
+@media (min-width: 1025px) {
+    body {
+        background-color: lightcoral;
+        font-size: 18px;
+    }
+
+    header, footer {
+        background-color: #666;
+        padding: 25px;
+    }
+
+    main {
+        padding: 30px;
+    }
+}

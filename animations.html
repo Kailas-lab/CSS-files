@@ -1,30 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style> 
-div {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  animation-name: example;
-  animation-duration: 9s;
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @keyframes slide {
+      from {
+        transform: translateX(100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+    
+    .animated-box {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      animation: slide 5s ease-in-out;
+    }
 
-@keyframes example {
-  from {background-color: red;}
-  to {background-color: yellow;}
-}
-</style>
+    .animated-box1 {
+      width: 50px;
+      height: 30px;
+      background-color: rgb(15, 224, 179);
+      animation: slide 5s ease-in-out;
+    }
+  </style>
+  <title>CSS Animation Example</title>
 </head>
 <body>
-
-<h1>CSS Animation</h1>
-
-<div></div>
-
-<p><b>Note:</b> When an animation is finished, it goes back to its original style.</p>
-
+  <div class="animated-box">
+    <h1 class="animated-box1">hi</h1>
+  </div>
 </body>
 </html>
-
-
